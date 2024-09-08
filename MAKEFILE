@@ -1,8 +1,33 @@
-cc = gcc
-CFLAGS = -g -Wall -pg
+all: quicksort mergesort estandarsort selectionsort mmtradicional mmoptimizado strassen 
 
-quicksort: quicksort.o 
-	$(CC) $(CFLAGS) -o quicksort quicksort.o
+maker: arraymaker matrixmaker
+
+quicksort: quicksort.cc
+	g++ -pg quicksort.cc -o  quicksort
+
+mergesort: mergesort.cc
+	g++ -pg  mergesort.cc -o mergesort
+
+estandarsort: estandarsort.cc
+	g++ -pg estandarsort.cc -o estandarsort
+
+selectionsort: selectionsort.cc
+	g++ -pg selectionsort.cc -o selectionsort
+
+mmtradicional: mmtradicional.cc
+	g++ -pg mmtradicional.cc -o mmtradicional
+
+mmoptimizado: mmoptimizado.cc
+	g++ -pg mmoptimizado.cc -o mmoptimizado
+
+strassen: strassen.cc 
+	g++ -pg strassen.cc -o strassen
+
+arraymaker: arraymaker.py
+	python3 arraymaker.py
+
+matrixmaker: matrixmaker.py
+	python3 matrixmaker.py
 
 clean:
-	rm -f ./*.o 
+	rm -rf *.o quicksort mergesort estandarsort selectionsort mmtradicional mmoptimizado strassen gmon.out
