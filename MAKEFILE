@@ -1,4 +1,4 @@
-all: quicksort mergesort estandarsort selectionsort mmtradicional mmoptimizado strassen 
+all: arraymaker matrixmaker quicksort mergesort estandarsort selectionsort mmtradicional mmoptimizado strassen 
 
 maker: arraymaker matrixmaker
 
