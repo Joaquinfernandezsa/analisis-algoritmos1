@@ -1,0 +1,8 @@
+cc = gcc
+CFLAGS = -g -Wall -pg
+
+quicksort: quicksort.o 
+	$(CC) $(CFLAGS) -o quicksort quicksort.o
+
+clean:
+	rm -f ./*.o 
