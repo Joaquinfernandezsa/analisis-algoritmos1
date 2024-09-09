@@ -90,22 +90,22 @@ std::vector<int> readDataFromFile(const std::string& filename) {
 int main() {
     // Lista de archivos a leer
     std::vector<std::string> files = {
-        "random_data_10.txt",
-        "random_data_100.txt",
-        "random_data_1000.txt",
-        "random_data_10000.txt",
-        "sorted_data_10.txt",
-        "sorted_data_100.txt",
-        "sorted_data_1000.txt",
-        "sorted_data_10000.txt",
-        "reversed_data_10.txt",
-        "reversed_data_100.txt",
-        "reversed_data_1000.txt",
-        "reversed_data_10000.txt",
-        "partially_sorted_data_10.txt",
-        "partially_sorted_data_100.txt",
-        "partially_sorted_data_1000.txt",
-        "partially_sorted_data_10000.txt"
+        "listas/random_data_10.txt",
+        "listas/random_data_100.txt",
+        "listas/random_data_1000.txt",
+        "listas/random_data_10000.txt",
+        "listas/sorted_data_10.txt",
+        "listas/sorted_data_100.txt",
+        "listas/sorted_data_1000.txt",
+        "listas/sorted_data_10000.txt",
+        "listas/reversed_data_10.txt",
+        "listas/reversed_data_100.txt",
+        "listas/reversed_data_1000.txt",
+        "listas/reversed_data_10000.txt",
+        "listas/partially_sorted_data_10.txt",
+        "listas/partially_sorted_data_100.txt",
+        "listas/partially_sorted_data_1000.txt",
+        "listas/partially_sorted_data_10000.txt"
     };
     
     // Map para almacenar los tiempos de ordenamiento
