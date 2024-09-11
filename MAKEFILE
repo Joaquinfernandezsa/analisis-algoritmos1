@@ -3,25 +3,25 @@ all: arraymaker matrixmaker quicksort mergesort estandarsort selectionsort mmtra
 maker: arraymaker matrixmaker
 
 quicksort: quicksort.cc
-	g++ -pg quicksort.cc -o  quicksort
+	g++ quicksort.cc -o  quicksort
 
 mergesort: mergesort.cc
-	g++ -pg  mergesort.cc -o mergesort
+	g++  mergesort.cc -o mergesort
 
 estandarsort: estandarsort.cc
-	g++ -pg estandarsort.cc -o estandarsort
+	g++ estandarsort.cc -o estandarsort
 
 selectionsort: selectionsort.cc
-	g++ -pg selectionsort.cc -o selectionsort
+	g++ selectionsort.cc -o selectionsort
 
 mmtradicional: mmtradicional.cc
-	g++ -pg mmtradicional.cc -o mmtradicional
+	g++ mmtradicional.cc -o mmtradicional
 
 mmoptimizado: mmoptimizado.cc
-	g++ -pg mmoptimizado.cc -o mmoptimizado
+	g++ mmoptimizado.cc -o mmoptimizado
 
 strassen: strassen.cc 
-	g++ -pg strassen.cc -o strassen
+	g++ strassen.cc -o strassen
 
 arraymaker: arraymaker.py
 	python3 arraymaker.py
